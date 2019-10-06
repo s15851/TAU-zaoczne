@@ -1,4 +1,4 @@
-package pl.edu.pjatk.tau;
+package grupa1.1;
 
 /**
  * Hello world!
