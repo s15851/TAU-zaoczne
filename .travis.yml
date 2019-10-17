@@ -1,4 +1,4 @@
 language: java
 script:
-- cd TAU_Lab1;mvn test
+- cd BoatApp;mvn test
 
