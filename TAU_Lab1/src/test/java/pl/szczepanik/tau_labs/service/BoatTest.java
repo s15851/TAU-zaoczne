@@ -10,7 +10,13 @@ import static org.junit.Assert.assertNotNull;
 @RunWith(JUnit4.class)
 public class BoatTest {
     @Test
-    public void boatIsImplementedTest() {
+    public void emptyBoatIsImplementedTest() {
         assertNotNull(new Boat());
     }
+
+    @Test
+    public void addBoatIsImplementedTest() {
+        assertNotNull(new Boat(1, "Antila 27", 2009));
+    }
+
 }

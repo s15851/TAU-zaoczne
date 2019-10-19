@@ -2,18 +2,24 @@ package pl.szczepanik.tau_labs.domain;
 
 public class Boat {
 
-    private long id;
+    private int id;
     private String boatModel;
     private int yearOfProduction;
 
     public Boat() {
     }
 
-    public long getId() {
+    public Boat(int id, String boatModel, int yearOfProduction) {
+        this.id = id;
+        this.boatModel = boatModel;
+        this.yearOfProduction = yearOfProduction;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
