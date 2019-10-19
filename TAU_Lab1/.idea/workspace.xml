@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11a8fdad-1741-453c-822b-031c3686ae22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/szczepanik/tau_labs/Boat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TAU_Lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BoatApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grupa1/Flat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/grupa1/FlatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/szczepanik/tau_labs/BoatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/szczepanik/tau_labs/Boat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/szczepanik/tau_labs/domain/Boat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/szczepanik/tau_labs/BoatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/szczepanik/tau_labs/service/BoatTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,12 +57,12 @@
       <module name="BoatApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.szczepanik.tau_labs.*" />
+          <option name="PATTERN" value="pl.szczepanik.tau_labs.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs" />
-      <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.BoatTest" />
+      <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
+      <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,11 +103,6 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="FlatTest - 2019.10.06 at 11h 58m 46s.xml">
-      <configuration name="FlatTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -130,7 +118,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
