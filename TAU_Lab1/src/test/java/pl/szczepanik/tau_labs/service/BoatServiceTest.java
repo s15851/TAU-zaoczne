@@ -6,6 +6,10 @@ import org.junit.runners.JUnit4;
 import pl.szczepanik.tau_labs.domain.Boat;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 @RunWith(JUnit4.class)
@@ -25,8 +29,9 @@ public class BoatServiceTest {
         db.addBoat(boat1);
         db.addBoat(boat2);
     }
+
     @Test(expected = IllegalArgumentException.class)
-    public void createBoatTestTheSameId() {
+    public void createBoatTestTheSameId() { //proba dodania obiektu o tym samym id)
         Boat boat1 = new Boat(1, "Antila 27", 2009);
         Boat boat2 = new Boat(1, "Antila 27", 2009);
         BoatService db = new BoatService();
@@ -40,6 +45,26 @@ public class BoatServiceTest {
         BoatService db = new BoatService();
         db.addBoat(boat1);
         db.getBoatById(boat1.getId());
+    }
+
+    @Test(expected = NoSuchFieldError.class)
+    public void getBoatFromDbwithoutId() {
+        Boat boat1 = new Boat(1, "Antila 27", 2009);
+        BoatService db = new BoatService();
+        db.addBoat(boat1);
+        int id = 2;
+        db.getBoatById(id);
+    }
+
+    @Test
+    public void checkReadAllBoats() {
+        Boat boat1 = new Boat(1, "Antila 27", 2009);
+        BoatService db = new BoatService();
+        db.addBoat(boat1);
+
+        List<Boat> newBoatList = new ArrayList<Boat>();
+        newBoatList.add(boat1);
+        assertEquals(newBoatList, db.readAll());
     }
 
 

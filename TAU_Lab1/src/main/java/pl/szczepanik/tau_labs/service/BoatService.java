@@ -28,4 +28,7 @@ public class BoatService {
         throw new NoSuchFieldError();
     }
 
+    public List<Boat> readAll() {
+        return db;
+    }
 }
