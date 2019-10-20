@@ -71,8 +71,8 @@ public class BoatServiceTest {
     public void checkIsBoatAdded() {
         Boat boat1 = new Boat(1, "Antila 27", 2009);
         BoatService db = new BoatService();
-        db.getBoatById(1);
-        assertEquals(boat1, getBoatFromDb(1));
+        db.addBoat(boat1);
+        assertEquals(boat1, db.getBoatById(1));
     }
 
 
