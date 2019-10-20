@@ -31,7 +31,7 @@ public class BoatServiceTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void createBoatTestTheSameId() { //proba dodania obiektu o tym samym id)
+    public void createBoatTestTheSameId() {
         Boat boat1 = new Boat(1, "Antila 27", 2009);
         Boat boat2 = new Boat(1, "Antila 27", 2009);
         BoatService db = new BoatService();
@@ -67,6 +67,13 @@ public class BoatServiceTest {
         assertEquals(newBoatList, db.readAll());
     }
 
+    @Test
+    public void checkIsBoatAdded() {
+        Boat boat1 = new Boat(1, "Antila 27", 2009);
+        BoatService db = new BoatService();
+        db.getBoatById(1);
+        assertEquals(boat1, getBoatFromDb(1));
+    }
 
 
 }
