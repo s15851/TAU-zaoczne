@@ -48,7 +48,7 @@ public class BoatServiceTest {
     }
 
     @Test(expected = NoSuchFieldError.class)
-    public void getBoatFromDbwithoutId() {
+    public void getBoatFromDbWithoutId() {
         Boat boat1 = new Boat(1, "Antila 27", 2009);
         BoatService db = new BoatService();
         db.addBoat(boat1);
@@ -73,6 +73,16 @@ public class BoatServiceTest {
         BoatService db = new BoatService();
         db.addBoat(boat1);
         assertEquals(boat1, db.getBoatById(1));
+    }
+
+    @Test
+    public void checkIsBoatUpdated() {
+        Boat boat1 = new Boat(1, "Antila 27", 2009);
+        Boat boat2 = new Boat(1, "Tango 780", 2017);
+        BoatService db = new BoatService();
+        db.addBoat(boat1);
+        db.updateBoat(boat2);
+        assertEquals(boat2.getKind(), db.getBoatById(1).getKind());
     }
 
 
