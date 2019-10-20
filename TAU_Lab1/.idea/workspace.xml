@@ -2,16 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11a8fdad-1741-453c-822b-031c3686ae22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoatApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BoatApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/szczepanik/tau_labs/service/BoatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/szczepanik/tau_labs/service/BoatService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/szczepanik/tau_labs/service/BoatServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/szczepanik/tau_labs/service/BoatServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BoatApp.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/domain/Boat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/domain/Boat.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/service/BoatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/service/BoatService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.szczepanik.tau_labs.service.BoatServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.szczepanik.tau_labs.service.BoatServiceTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatServiceTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/service/BoatServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/service/BoatTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/BoatApp.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/service/BoatServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/service/BoatServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/service/BoatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/service/BoatTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +55,7 @@
   <component name="ProjectId" id="1SLZ49q4a4cih0a7IvrCEzQtvkq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570358577534" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -74,7 +83,63 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoatServiceTest.checkIsBoatDeleted">
+  <component name="RunManager" selected="JUnit.BoatServiceTest">
+    <configuration name="All in BoatApp (1)" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="BoatApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in BoatApp (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoatApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in BoatApp (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoatApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in BoatApp (4)" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="BoatApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in BoatApp (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoatApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in BoatApp (6)" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="BoatApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in BoatApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoatApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BoatServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BoatApp" />
       <extension name="coverage">
@@ -90,75 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoatServiceTest.checkIsBoatDeleted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoatApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.szczepanik.tau_labs.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
-      <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatServiceTest" />
-      <option name="METHOD_NAME" value="checkIsBoatDeleted" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoatServiceTest.checkIsBoatUpdated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoatApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.szczepanik.tau_labs.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
-      <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatServiceTest" />
-      <option name="METHOD_NAME" value="checkIsBoatUpdated" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoatTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoatApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.szczepanik.tau_labs.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
-      <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FlatTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoatApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="grupa1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="grupa1" />
-      <option name="MAIN_CLASS_NAME" value="grupa1.FlatTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BoatServiceTest.checkIsBoatDeleted" />
-        <item itemvalue="JUnit.BoatServiceTest.checkIsBoatUpdated" />
         <item itemvalue="JUnit.BoatServiceTest" />
-        <item itemvalue="JUnit.BoatTest" />
-        <item itemvalue="JUnit.FlatTest" />
+        <item itemvalue="JUnit.All in BoatApp (5)" />
+        <item itemvalue="JUnit.All in BoatApp (3)" />
+        <item itemvalue="JUnit.All in BoatApp (2)" />
+        <item itemvalue="JUnit.All in BoatApp" />
       </list>
     </recent_temporary>
   </component>
@@ -174,16 +177,6 @@
       <updated>1570352883968</updated>
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-      <is-preview-enabled value="true" />
-    </todo-panel>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

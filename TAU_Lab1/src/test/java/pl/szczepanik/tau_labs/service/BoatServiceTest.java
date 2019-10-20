@@ -6,6 +6,7 @@ import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import pl.szczepanik.tau_labs.domain.Boat;
+import java.lang.IllegalArgumentException;
 
 
 import java.util.ArrayList;
@@ -53,7 +54,7 @@ public class BoatServiceTest {
         db.read(boat1.getId());
     }
 
-    @Test(expected = NoSuchFieldError.class)
+    @Test(expected = NoSuchElementException.class)
     public void getBoatFromDbWithoutId() {
         Boat boat1 = new Boat(1, "Antila 27", 2009);
         BoatService db = new BoatService();
@@ -83,9 +84,8 @@ public class BoatServiceTest {
 
     @Test
     public void checkIsBoatUpdated() {
-
         Boat boat = new Boat(1, "Antila 27", 2009);
-        BoatService db = new BoatService(); 
+        BoatService db = new BoatService();
         db.create(boat);
         Boat boat1 = db.read(boat.getId());
         boat1.setBoatModel("Phila");
@@ -96,7 +96,6 @@ public class BoatServiceTest {
 
     @Test
     public void checkIsBoatDeleted(){
-
         Boat boat = new Boat(1, "Antila 27", 2009);
         BoatService db = new BoatService();
         db.create(boat);
