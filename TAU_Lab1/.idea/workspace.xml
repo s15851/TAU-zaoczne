@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11a8fdad-1741-453c-822b-031c3686ae22" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/szczepanik/tau_labs/domain/Boat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/szczepanik/tau_labs/domain/Boat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/szczepanik/tau_labs/service/BoatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/szczepanik/tau_labs/service/BoatTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/Boat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/szczepanik/tau_labs/domain/Boat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/service/BoatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/service/BoatService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/service/BoatServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.szczepanik.tau_labs.BoatTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.szczepanik.tau_labs.BoatTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pl.szczepanik.tau_labs.BoatTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pl.szczepanik.tau_labs.BoatTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/BoatTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/service/BoatServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/service/BoatServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +26,14 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\kamil\Documents\STUDIA\sem7\TAU-zaoczne\TAU_Lab1\.idea" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -48,6 +54,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.szczepanik.tau_labs.service" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.szczepanik.tau_labs.service" />
     </key>
   </component>

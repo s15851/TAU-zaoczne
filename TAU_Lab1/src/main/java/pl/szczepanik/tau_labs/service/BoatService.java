@@ -3,33 +3,29 @@ package pl.szczepanik.tau_labs.service;
 import pl.szczepanik.tau_labs.domain.Boat;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class BoatService {
-    private ArrayList<Boat> boats;
 
-    public BoatService(){
+    private List<Boat> db = new ArrayList<Boat>();
 
+
+    public void addBoat(Boat boat) {
+        for (Boat boatFromDb : db) {
+            if (boatFromDb.getId() == boat.getId()) {
+                throw new IllegalArgumentException();
+            }
+        }
+        db.add(boat);
     }
 
-    public BoatService(ArrayList<Boat> boats) {
-        this.boats = boats;
-        Boat boat1 = new Boat(1, "Antila 27", 2009);
-        boats.add(boat1);
+    public Boat getBoatById(int id) {
+        for (Boat boatFromDb : db) {
+            if (boatFromDb.getId() == id) {
+                return boatFromDb;
+            }
+        }
+        throw new NoSuchFieldError();
     }
 
-    public Boat create(){
-        return new Boat();
-    }
-
-    public Boat read(){
-        return new Boat();
-    }
-
-    public Boat update(){
-        return new Boat();
-    }
-
-    public Boat delete(){
-        return new Boat();
-    }
 }
