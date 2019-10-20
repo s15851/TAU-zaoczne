@@ -4,13 +4,14 @@ import pl.szczepanik.tau_labs.domain.Boat;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class BoatService {
 
-    private List<Boat> db = new ArrayList<Boat>();
+    public static ArrayList<Boat> db = new ArrayList<>();
 
 
-    public void addBoat(Boat boat) {
+    public void create(Boat boat) {
         for (Boat boatFromDb : db) {
             if (boatFromDb.getId() == boat.getId()) {
                 throw new IllegalArgumentException();
@@ -19,16 +20,17 @@ public class BoatService {
         db.add(boat);
     }
 
-    public Boat getBoatById(int id) {
+    public Boat read(int id) {
         for (Boat boatFromDb : db) {
             if (boatFromDb.getId() == id) {
                 return boatFromDb;
             }
         }
-        throw new NoSuchFieldError();
+        throw new NoSuchElementException("There is no boat in this ID");
     }
 
     public List<Boat> readAll() {
         return db;
     }
+
 }

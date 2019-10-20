@@ -1,6 +1,8 @@
 package pl.szczepanik.tau_labs.service;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import pl.szczepanik.tau_labs.domain.Boat;
@@ -8,12 +10,16 @@ import pl.szczepanik.tau_labs.domain.Boat;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 @RunWith(JUnit4.class)
 public class BoatServiceTest {
+
+    @Rule
+    public final ExpectedException exception = ExpectedException.none();
 
     @Test
     public void createBoatObject() {
@@ -26,8 +32,8 @@ public class BoatServiceTest {
         Boat boat1 = new Boat(1, "Antila 27", 2009);
         Boat boat2 = new Boat(2, "Tango 780", 2017);
         BoatService db = new BoatService();
-        db.addBoat(boat1);
-        db.addBoat(boat2);
+        db.create(boat1);
+        db.create(boat2);
     }
 
     @Test(expected = IllegalArgumentException.class)
@@ -35,32 +41,32 @@ public class BoatServiceTest {
         Boat boat1 = new Boat(1, "Antila 27", 2009);
         Boat boat2 = new Boat(1, "Antila 27", 2009);
         BoatService db = new BoatService();
-        db.addBoat(boat1);
-        db.addBoat(boat2);
+        db.create(boat1);
+        db.create(boat2);
     }
 
     @Test
     public void getBoatFromDb() {
         Boat boat1 = new Boat(1, "Antila 27", 2009);
         BoatService db = new BoatService();
-        db.addBoat(boat1);
-        db.getBoatById(boat1.getId());
+        db.create(boat1);
+        db.read(boat1.getId());
     }
 
     @Test(expected = NoSuchFieldError.class)
     public void getBoatFromDbWithoutId() {
         Boat boat1 = new Boat(1, "Antila 27", 2009);
         BoatService db = new BoatService();
-        db.addBoat(boat1);
+        db.create(boat1);
         int id = 2;
-        db.getBoatById(id);
+        db.read(id);
     }
 
     @Test
     public void checkReadAllBoats() {
         Boat boat1 = new Boat(1, "Antila 27", 2009);
         BoatService db = new BoatService();
-        db.addBoat(boat1);
+        db.create(boat1);
 
         List<Boat> newBoatList = new ArrayList<Boat>();
         newBoatList.add(boat1);
@@ -71,19 +77,33 @@ public class BoatServiceTest {
     public void checkIsBoatAdded() {
         Boat boat1 = new Boat(1, "Antila 27", 2009);
         BoatService db = new BoatService();
-        db.addBoat(boat1);
-        assertEquals(boat1, db.getBoatById(1));
+        db.create(boat1);
+        assertEquals(boat1, db.read(1));
     }
 
     @Test
     public void checkIsBoatUpdated() {
-        Boat boat1 = new Boat(1, "Antila 27", 2009);
-        Boat boat2 = new Boat(1, "Tango 780", 2017);
-        BoatService db = new BoatService();
-        db.addBoat(boat1);
-        db.updateBoat(boat2);
-        assertEquals(boat2.getKind(), db.getBoatById(1).getKind());
+
+        Boat boat = new Boat(1, "Antila 27", 2009);
+        BoatService db = new BoatService(); 
+        db.create(boat);
+        Boat boat1 = db.read(boat.getId());
+        boat1.setBoatModel("Phila");
+        boat1.setYearOfProduction(2016);
+        db.update(boat1);
+        assertEquals(boat,db.read(1));
     }
 
+    @Test
+    public void checkIsBoatDeleted(){
 
+        Boat boat = new Boat(1, "Antila 27", 2009);
+        BoatService db = new BoatService();
+        db.create(boat);
+        db.delete(1);
+        exception.expect(NoSuchElementException.class);
+        exception.expectMessage("There is no boat in this ID");
+        db.read(boat.getId());
+
+    }
 }
