@@ -28,7 +28,7 @@ public class BoatService {
                 return boatFromDb;
             }
         }
-        throw new NoSuchElementException();
+        throw new NoSuchElementException("There is no boat in this ID");
     }
 
     public List<Boat> readAll() {

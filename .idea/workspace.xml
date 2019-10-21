@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac5074d4-988f-4b72-93a8-d6c5be05fd5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TAU_Lab1/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/BoatApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/BoatApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/src/main/java/pl/szczepanik/tau_labs/service/BoatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/src/main/java/pl/szczepanik/tau_labs/service/BoatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/src/test/java/pl/szczepanik/tau_labs/service/BoatServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/src/test/java/pl/szczepanik/tau_labs/service/BoatServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/target/classes/META-INF/BoatApp.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/target/classes/pl/szczepanik/tau_labs/domain/Boat.class" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/target/classes/pl/szczepanik/tau_labs/domain/Boat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/target/classes/pl/szczepanik/tau_labs/service/BoatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/target/classes/pl/szczepanik/tau_labs/service/BoatService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/target/surefire-reports/TEST-pl.szczepanik.tau_labs.service.BoatServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/target/surefire-reports/TEST-pl.szczepanik.tau_labs.service.BoatServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/target/test-classes/META-INF/BoatApp.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/target/test-classes/pl/szczepanik/tau_labs/service/BoatServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/target/test-classes/pl/szczepanik/tau_labs/service/BoatServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAU_Lab1/target/test-classes/pl/szczepanik/tau_labs/service/BoatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TAU_Lab1/target/test-classes/pl/szczepanik/tau_labs/service/BoatTest.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/TAU_Lab1" />
+  </component>
+  <component name="ProjectId" id="1SWYEe0d0FphqykR8jeG5L1NtA1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/TAU-zaoczne-master/TAU_Lab1" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac5074d4-988f-4b72-93a8-d6c5be05fd5d" name="Default Changelist" comment="" />
+      <created>1571680708150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571680708150</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
