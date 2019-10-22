@@ -73,10 +73,10 @@ public class BoatServiceTest {
         db.create(boat2);
         db.create(boat3);
         List<Boat> newBoatList = db.readAll();
-        exception.expectMessage("There is no boat in this ID");
-        assertEquals(db.read(0), newBoatList.get(0));
-        assertEquals(db.read(1), newBoatList.get(1));
-        assertEquals(db.read(2), newBoatList.get(2));
+        assertEquals(BoatService.db.size() ,newBoatList.size());
+        assertEquals(BoatService.db.get(0), newBoatList.get(0));
+        assertEquals(BoatService.db.get(1), newBoatList.get(1));
+        assertEquals(BoatService.db.get(2), newBoatList.get(2));
 
     }
 

@@ -60,7 +60,7 @@
     <property name="sun.stdout.encoding" value="cp852"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="getBoatFromDb" time="0.004"/>
+  <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="getBoatFromDb" time="0.005"/>
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="createBoatTest" time="0"/>
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkIsBoatAdded" time="0"/>
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="getBoatFromDbWithoutId" time="0"/>
@@ -68,5 +68,5 @@
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="createBoatObject" time="0"/>
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="createBoatTestTheSameId" time="0"/>
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkIsBoatUpdated" time="0"/>
-  <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkReadAllBoats" time="0.001"/>
+  <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkReadAllBoats" time="0"/>
 </testsuite>
