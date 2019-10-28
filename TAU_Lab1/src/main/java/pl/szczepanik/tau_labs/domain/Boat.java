@@ -7,9 +7,12 @@ public class Boat {
     private int id;
     private String boatModel;
     private int yearOfProduction;
-    private Date creationTime;
-	private Date modificationTime;
-	private Date readTime;
+    private long creationTime;
+    private long modificationTime;
+    private long readTime;
+
+    public Boat() {
+    }
 
     public Boat(int id, String boatModel, int yearOfProduction) {
         this.id = id;
@@ -17,7 +20,7 @@ public class Boat {
         this.yearOfProduction = yearOfProduction;
     }
 
-    public Boat(int id, String boatModel, int yearOfProduction, Date creationTime, Date modificationTime, Date readTime) {
+    public Boat(int id, String boatModel, int yearOfProduction, long creationTime, long modificationTime, long readTime) {
         this.id = id;
         this.boatModel = boatModel;
         this.yearOfProduction = yearOfProduction;
@@ -50,27 +53,27 @@ public class Boat {
         this.yearOfProduction = yearOfProduction;
     }
 
-    public Date getCreationTime() {
+    public long getCreationTime() {
         return creationTime;
     }
 
-    public void setCreationTime(Date creationTime) {
+    public void setCreationTime(long creationTime) {
         this.creationTime = creationTime;
     }
 
-    public Date getModificationTime() {
+    public long getModificationTime() {
         return modificationTime;
     }
 
-    public void setModificationTime(Date modificationTime) {
+    public void setModificationTime(long modificationTime) {
         this.modificationTime = modificationTime;
     }
 
-    public Date getReadTime() {
+    public long getReadTime() {
         return readTime;
     }
 
-    public void setReadTime(Date readTime) {
+    public void setReadTime(long readTime) {
         this.readTime = readTime;
     }
 

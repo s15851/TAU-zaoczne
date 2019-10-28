@@ -1,15 +1,18 @@
 package pl.szczepanik.tau_labs.service;
 
 import pl.szczepanik.tau_labs.domain.Boat;
+import pl.szczepanik.tau_labs.interfaces.BoatInterface;
+import pl.szczepanik.tau_labs.interfaces.TimeSource;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
 
-public class BoatService {
+public class BoatService implements BoatInterface, TimeSource {
 
     public static ArrayList<Boat> db = new ArrayList<>();
+    private long timeSource;
 
 
     public Boat create(Boat boat) throws IllegalArgumentException {
@@ -25,6 +28,7 @@ public class BoatService {
     public Boat read(int id) {
         for (Boat boatFromDb : db) {
             if (boatFromDb.getId() == id) {
+                boatFromDb.setReadTime(getCurrentDate());
                 return boatFromDb;
             }
         }
@@ -46,6 +50,14 @@ public class BoatService {
     public void delete(int id) {
         Boat boat = read(id);
         db.remove(boat);
+    }
+
+    public long getCurrentDate() {
+        return this.timeSource;
+    }
+
+    public void setTimeSource (long time) {
+        this.timeSource = time;
     }
 
 }

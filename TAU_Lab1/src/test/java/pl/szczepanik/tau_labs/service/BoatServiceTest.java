@@ -5,19 +5,24 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
 import pl.szczepanik.tau_labs.domain.Boat;
-import java.lang.IllegalArgumentException;
+import pl.szczepanik.tau_labs.interfaces.TimeSource;
 
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.mockito.Mockito.when;
 
-@RunWith(JUnit4.class)
+//@RunWith(JUnit4.class)
+@RunWith(MockitoJUnitRunner.class)
 public class BoatServiceTest {
+
+    @Mock
+    TimeSource timeSource;
 
     @Rule
     public final ExpectedException exception = ExpectedException.none();
@@ -111,4 +116,17 @@ public class BoatServiceTest {
         db.read(boat.getId());
 
     }
+
+    @Test
+    public void checkTimeStampAfterReadOneRecord() {
+        when(timeSource.getCurrentDate()).thenReturn((long) 123456);
+        Boat boat = new Boat(10, "Antila 27", 2009);
+        BoatService db = new BoatService();
+        db.create(boat);
+        db.setTimeSource(timeSource.getCurrentDate());
+        db.read(10);
+        long time = 123456;
+        assertEquals(time, db.read(10).getReadTime());
+    }
+
 }
