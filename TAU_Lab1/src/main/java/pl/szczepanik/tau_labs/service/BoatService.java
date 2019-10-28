@@ -36,6 +36,9 @@ public class BoatService implements BoatInterface, TimeSource {
     }
 
     public List<Boat> readAll() {
+        for (Boat boatFromDb: db) {
+            boatFromDb.setReadTime(getCurrentDate());
+        }
         return db;
     }
 

@@ -134,7 +134,7 @@ public class BoatServiceTest {
 
         long time = 123456789;
 
-        when(timeSource.getCurrentDate()).thenReturn((time));
+        when(timeSource.getCurrentDate()).thenReturn(time);
         Boat boat1 = new Boat(21, "Antila 27", 2009);
         Boat boat2 = new Boat(22, "Tango 780", 2017);
         Boat boat3 = new Boat(23, "Twister", 2010);
@@ -144,9 +144,9 @@ public class BoatServiceTest {
         db.create(boat3);
         db.setTimeSource(timeSource.getCurrentDate());
 
-        assertEquals(time, db.readAll().getReadTime());
-        assertEquals(time, db.readAll().getReadTime());
-        assertEquals(time, db.readAll().getReadTime());
+        assertEquals(time, db.readAll().get(0).getReadTime());
+        assertEquals(time, db.readAll().get(1).getReadTime());
+        assertEquals(time, db.readAll().get(2).getReadTime());
     }
 
 }
