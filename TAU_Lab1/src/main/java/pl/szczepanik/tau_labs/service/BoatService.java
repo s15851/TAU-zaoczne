@@ -21,6 +21,7 @@ public class BoatService implements BoatInterface, TimeSource {
                 throw new IllegalArgumentException();
             }
         }
+        boat.setCreationTime(getCurrentDate());
         db.add(boat);
         return boat;
     }

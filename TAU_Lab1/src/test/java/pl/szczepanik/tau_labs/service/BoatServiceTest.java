@@ -153,11 +153,11 @@ public class BoatServiceTest {
     public void checkTimeStampAfterAddNewBoat() {
         long time = 1234567891;
         when(timeSource.getCurrentDate()).thenReturn(time);
-        Boat boat1 = new Boat(1, "Antila 27", 2009);
+        Boat boat1 = new Boat(31, "Antila 27", 2009);
         BoatService db = new BoatService();
         db.setTimeSource(timeSource.getCurrentDate());
         db.create(boat1);
-        assertEquals(time, db.read(1).getCreationTime());
+        assertEquals(time, db.read(31).getCreationTime());
     }
 
 }
