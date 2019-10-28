@@ -1,7 +1,5 @@
 package pl.szczepanik.tau_labs.domain;
 
-import java.util.Date;
-
 public class Boat {
 
     private int id;

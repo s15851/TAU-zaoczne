@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface BoatInterface {
 
-    Boat create(Boat boat);
+    void create(Boat boat);
     Boat read(int id);
     List<Boat> readAll();
     Boat update(Boat boat);

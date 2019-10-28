@@ -129,4 +129,25 @@ public class BoatServiceTest {
         assertEquals(time, db.read(10).getReadTime());
     }
 
+    @Test
+    public void checkTimeStampAfterReadAllRecords() {
+        when(timeSource.getCurrentDate()).thenReturn((long) 123456789);
+        Boat boat1 = new Boat(21, "Antila 27", 2009);
+        Boat boat2 = new Boat(22, "Tango 780", 2017);
+        Boat boat3 = new Boat(23, "Twister", 2010);
+        BoatService db = new BoatService();
+        db.create(boat1);
+        db.create(boat2);
+        db.create(boat3);
+        db.setTimeSource(timeSource.getCurrentDate());
+        db.readAll();
+        long time = 123456789;
+        System.out.println(db.read(21));
+        System.out.println(db.read(22));
+        System.out.println(db.read(23));
+        assertEquals(time, db.read(21).getReadTime());
+        assertEquals(time, db.read(22).getReadTime());
+        assertEquals(time, db.read(23).getReadTime());
+    }
+
 }

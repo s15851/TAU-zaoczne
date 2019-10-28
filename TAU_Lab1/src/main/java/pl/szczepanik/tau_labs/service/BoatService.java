@@ -15,14 +15,13 @@ public class BoatService implements BoatInterface, TimeSource {
     private long timeSource;
 
 
-    public Boat create(Boat boat) throws IllegalArgumentException {
+    public void create(Boat boat) throws IllegalArgumentException {
         for (Boat boatFromDb : db) {
             if (boatFromDb.getId() == boat.getId()) {
                 throw new IllegalArgumentException();
             }
         }
         db.add(boat);
-        return boat;
     }
 
     public Boat read(int id) {
