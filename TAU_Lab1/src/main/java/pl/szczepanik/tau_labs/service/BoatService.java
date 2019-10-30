@@ -49,6 +49,7 @@ public class BoatService implements BoatInterface, TimeSource {
     public Boat update(Boat updateBoat) {
         if(db.contains(updateBoat)){
             db.set(db.indexOf(updateBoat),updateBoat);
+            updateBoat.setModificationTime(getCurrentDate());
             return updateBoat;
         }
         throw  new NoSuchElementException("There is no boat in this ID in database");
