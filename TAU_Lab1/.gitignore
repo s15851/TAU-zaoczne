@@ -1,3 +1,5 @@
-target
-.idea
-BoatApp.iml
+target/
+.idea/
+*.iml
+/.idea
+

@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11a8fdad-1741-453c-822b-031c3686ae22" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/szczepanik/tau_labs/service/BoatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/szczepanik/tau_labs/service/BoatService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/szczepanik/tau_labs/service/BoatServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/szczepanik/tau_labs/service/BoatServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/interfaces/BoatInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/interfaces/BoatInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/service/BoatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/service/BoatService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.szczepanik.tau_labs.service.BoatServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.szczepanik.tau_labs.service.BoatServiceTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/service/BoatServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/service/BoatServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoatServiceTest.checkTimeStampAfterReadAllRecords">
+  <component name="RunManager" selected="JUnit.BoatServiceTest.checkTimeStampAfterUpdateBoat">
     <configuration name="All in BoatApp (1)" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="BoatApp" />
       <option name="PACKAGE_NAME" value="" />
@@ -112,7 +116,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoatServiceTest.checkIsBoatUpdated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoatServiceTest.checkCreationTimeDisabled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BoatApp" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +126,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
       <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatServiceTest" />
-      <option name="METHOD_NAME" value="checkIsBoatUpdated" />
+      <option name="METHOD_NAME" value="checkCreationTimeDisabled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoatServiceTest.checkGetAllTimeStampsForBoatById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoatApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.szczepanik.tau_labs.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
+      <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatServiceTest" />
+      <option name="METHOD_NAME" value="checkGetAllTimeStampsForBoatById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,7 +164,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoatServiceTest.checkTimeStampAfterReadOneRecord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoatServiceTest.checkTimeStampAfterUpdateBoat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BoatApp" />
       <extension name="coverage">
         <pattern>
@@ -154,23 +174,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
       <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatServiceTest" />
-      <option name="METHOD_NAME" value="checkTimeStampAfterReadOneRecord" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoatServiceTest.createBoatObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoatApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.szczepanik.tau_labs.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
-      <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatServiceTest" />
-      <option name="METHOD_NAME" value="createBoatObject" />
+      <option name="METHOD_NAME" value="checkTimeStampAfterUpdateBoat" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoatServiceTest.checkTimeStampAfterUpdateBoat" />
+        <item itemvalue="JUnit.BoatServiceTest.checkCreationTimeDisabled" />
+        <item itemvalue="JUnit.BoatServiceTest.checkGetAllTimeStampsForBoatById" />
         <item itemvalue="JUnit.BoatServiceTest.checkTimeStampAfterReadAllRecords" />
         <item itemvalue="JUnit.BoatServiceTest" />
-        <item itemvalue="JUnit.BoatServiceTest.createBoatObject" />
-        <item itemvalue="JUnit.BoatServiceTest.checkTimeStampAfterReadOneRecord" />
-        <item itemvalue="JUnit.BoatServiceTest.checkIsBoatUpdated" />
       </list>
     </recent_temporary>
   </component>
