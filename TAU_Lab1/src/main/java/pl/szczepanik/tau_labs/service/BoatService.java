@@ -13,6 +13,7 @@ public class BoatService implements BoatInterface, TimeSource {
 
     public static ArrayList<Boat> db = new ArrayList<>();
     private long timeSource;
+    private boolean creationTimeEnabled = true;
 
 
     public Boat create(Boat boat) throws IllegalArgumentException {
@@ -21,7 +22,9 @@ public class BoatService implements BoatInterface, TimeSource {
                 throw new IllegalArgumentException();
             }
         }
-        boat.setCreationTime(getCurrentDate());
+        if (creationTimeEnabled) {
+            boat.setCreationTime(getCurrentDate());
+        }
         db.add(boat);
         return boat;
     }
@@ -64,4 +67,7 @@ public class BoatService implements BoatInterface, TimeSource {
         this.timeSource = time;
     }
 
+    public boolean setCreationTimeDisabled() {
+        return this.creationTimeEnabled = false;
+    }
 }

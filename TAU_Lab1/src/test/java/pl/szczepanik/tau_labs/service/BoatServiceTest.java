@@ -160,32 +160,16 @@ public class BoatServiceTest {
         assertEquals(time, db.read(31).getCreationTime());
     }
 
-
-
-    @Test
-    public void checkTimeStampAfterUpdateBoat() {
-        long time = 1234567892;
-        when(timeSource.getCurrentDate()).thenReturn(time);
-        Boat boat1 = new Boat(32, "Antila 27", 2009);
-        Boat boat2 = new Boat(32, "Tango 780", 2017);
-        BoatService db = new BoatService();
-        db.create(boat1);
-        db.setTimeSource(timeSource.getCurrentDate());
-        db.update(boat2);
-        assertEquals(time, db.read(32).getModificationTime());
-    }
-
-
     @Test
     public void checkCreationTimeDisabled() {
         long time = 1234567891;
         when(timeSource.getCurrentDate()).thenReturn(time);
-        Boat boat1 = new Boat(1, "Antila 27", 2009);
+        Boat boat1 = new Boat(32, "Antila 27", 2009);
         BoatService db = new BoatService();
         db.setTimeSource(timeSource.getCurrentDate());
         db.setCreationTimeDisabled();
         db.create(boat1);
-        assertEquals(0, db.read(1).getCreationTime());
+        assertEquals(0, db.read(32).getCreationTime());
     }
 
 }
