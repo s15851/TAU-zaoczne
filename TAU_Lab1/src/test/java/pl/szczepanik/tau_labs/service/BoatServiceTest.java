@@ -172,4 +172,20 @@ public class BoatServiceTest {
         assertEquals(0, db.read(32).getCreationTime());
     }
 
+    @Test
+    public void checkSetCreationTimeEnabled() {
+        long time = 1234567891;
+        when(timeSource.getCurrentDate()).thenReturn(time);
+        Boat boat1 = new Boat(33, "Antila 27", 2009);
+        Boat boat2 = new Boat(34, "Tango 780", 2017);
+        BoatService db = new BoatService();
+        db.setTimeSource(timeSource.getCurrentDate());
+        db.setCreationTimeDisabled();
+        db.create(boat1);
+        db.setCreationTimeEnabled();
+        db.create(boat2);
+        assertEquals(0, db.read(33).getCreationTime());
+        assertEquals(time, db.read(34).getCreationTime());
+    }
+
 }

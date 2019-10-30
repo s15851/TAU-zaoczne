@@ -70,4 +70,8 @@ public class BoatService implements BoatInterface, TimeSource {
     public boolean setCreationTimeDisabled() {
         return this.creationTimeEnabled = false;
     }
+
+    public boolean setCreationTimeEnabled() {
+        return true;
+    }
 }
