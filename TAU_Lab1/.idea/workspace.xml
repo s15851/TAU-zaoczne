@@ -74,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoatServiceTest.checkReadTimeDisabledAndEnabled">
+  <component name="RunManager" selected="JUnit.All in BoatApp (1)">
     <configuration name="All in BoatApp (1)" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="BoatApp" />
       <option name="PACKAGE_NAME" value="" />
@@ -95,22 +95,6 @@
       <module name="BoatApp" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoatServiceTest.checkGetAllTimeStampsForBoatByIdNotExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoatApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.szczepanik.tau_labs.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
-      <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatServiceTest" />
-      <option name="METHOD_NAME" value="checkGetAllTimeStampsForBoatByIdNotExists" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,6 +126,22 @@
       <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
       <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatServiceTest" />
       <option name="METHOD_NAME" value="checkReadTimeDisabled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoatServiceTest.checkReadTimeDisabledAfterReadAllRecords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoatApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.szczepanik.tau_labs.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
+      <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatServiceTest" />
+      <option name="METHOD_NAME" value="checkReadTimeDisabledAfterReadAllRecords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoatServiceTest.checkReadTimeDisabledAfterReadAllRecords" />
         <item itemvalue="JUnit.BoatServiceTest.checkReadTimeDisabledAndEnabled" />
         <item itemvalue="JUnit.BoatServiceTest.checkReadTimeDisabled" />
         <item itemvalue="JUnit.BoatServiceTest.checkModificationTimeEnabledAndDisabled" />
         <item itemvalue="JUnit.BoatServiceTest.checkSetModificationTimeDisabled" />
-        <item itemvalue="JUnit.BoatServiceTest.checkGetAllTimeStampsForBoatByIdNotExists" />
       </list>
     </recent_temporary>
   </component>

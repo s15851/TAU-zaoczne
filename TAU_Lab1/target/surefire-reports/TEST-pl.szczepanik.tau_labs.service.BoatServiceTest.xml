@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="21" failures="0" name="pl.szczepanik.tau_labs.service.BoatServiceTest" time="0.445" errors="0" skipped="0">
+<testsuite tests="21" failures="0" name="pl.szczepanik.tau_labs.service.BoatServiceTest" time="0.456" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="13+33"/>
@@ -60,7 +60,7 @@
     <property name="sun.stdout.encoding" value="cp852"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkCreationTimeDisabledAndEnabled" time="0.43"/>
+  <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkCreationTimeDisabledAndEnabled" time="0.425"/>
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="getBoatFromDb" time="0"/>
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="createBoatTest" time="0"/>
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkIsBoatAdded" time="0"/>
@@ -79,6 +79,6 @@
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkModificationTimeDisabledAndEnabled" time="0"/>
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkGetAllTimeStampsForBoatById" time="0"/>
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkReadTimeDisabledAndEnabled" time="0"/>
-  <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkReadAllBoats" time="0"/>
+  <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkReadAllBoats" time="0.016"/>
   <testcase classname="pl.szczepanik.tau_labs.service.BoatServiceTest" name="checkReadTimeDisabled" time="0"/>
 </testsuite>

@@ -10,7 +10,7 @@ import java.util.*;
 public class BoatService implements BoatInterface, TimeSource {
 
     public static ArrayList<Boat> db = new ArrayList<>();
-    private long timeSource;
+    private TimeSource timeSource;
     private boolean creationTimeEnabled = true;
     private boolean modificationTimeEnabled = true;
     private boolean readTimeEnabled = true;
@@ -65,11 +65,11 @@ public class BoatService implements BoatInterface, TimeSource {
     }
 
     public long getCurrentDate() {
-        return this.timeSource;
+        return this.timeSource.getCurrentDate();
     }
 
-    public void setTimeSource (long time) {
-        this.timeSource = time;
+    public void setTimeSource (TimeSource timesource) {
+        this.timeSource = timesource;
     }
 
     public boolean setCreationTimeDisabled() {
