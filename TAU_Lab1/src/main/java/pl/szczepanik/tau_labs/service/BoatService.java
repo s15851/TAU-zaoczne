@@ -107,6 +107,6 @@ public class BoatService implements BoatInterface, TimeSource {
     }
 
     public boolean setReadTimeEnabled() {
-        return true;
+        return this.readTimeEnabled = true;
     }
 }
