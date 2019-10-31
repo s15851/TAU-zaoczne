@@ -4,9 +4,7 @@ import pl.szczepanik.tau_labs.domain.Boat;
 import pl.szczepanik.tau_labs.interfaces.BoatInterface;
 import pl.szczepanik.tau_labs.interfaces.TimeSource;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 
 public class BoatService implements BoatInterface, TimeSource {
@@ -74,5 +72,17 @@ public class BoatService implements BoatInterface, TimeSource {
 
     public boolean setCreationTimeEnabled() {
         return this.creationTimeEnabled = true;
+    }
+
+    public Map<String, Long> getAllTimeStampsForBoatById(int id) {
+        Map<String, Long> allTimeStamps = new HashMap<String, Long>();
+        for(Boat boatFromDb: db) {
+            if(boatFromDb.getId() == id) {
+                allTimeStamps.put("creationTime", boatFromDb.getCreationTime());
+                allTimeStamps.put("modificationTime", boatFromDb.getModificationTime());
+                allTimeStamps.put("readTime", boatFromDb.getReadTime());
+            }
+        }
+        return allTimeStamps;
     }
 }
