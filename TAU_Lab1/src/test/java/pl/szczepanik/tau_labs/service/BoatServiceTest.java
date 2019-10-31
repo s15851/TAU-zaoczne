@@ -232,4 +232,21 @@ public class BoatServiceTest {
         db.getAllTimeStampsForBoatById(38);
     }
 
+    @Test
+    public void checkModificationTimeDisabled() {
+        long time = 1234567892;
+        when(timeSource.getCurrentDate()).thenReturn(time);
+        Boat boat = new Boat(40, "Antila 27", 2009);
+        BoatService db = new BoatService();
+        db.create(boat);
+        db.setTimeSource(timeSource.getCurrentDate());
+        db.setModificationTimeDisabled();
+        Boat boat1 = db.read(boat.getId());
+        boat1.setBoatModel("Phila");
+        boat1.setYearOfProduction(2016);
+        db.update(boat1);
+        assertEquals(0, db.read(40).getModificationTime());
+
+    }
+
 }

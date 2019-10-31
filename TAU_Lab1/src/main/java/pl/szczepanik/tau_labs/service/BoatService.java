@@ -12,6 +12,7 @@ public class BoatService implements BoatInterface, TimeSource {
     public static ArrayList<Boat> db = new ArrayList<>();
     private long timeSource;
     private boolean creationTimeEnabled = true;
+    private boolean modificationTimeEnabled = true;
 
 
     public Boat create(Boat boat) throws IllegalArgumentException {
@@ -86,5 +87,9 @@ public class BoatService implements BoatInterface, TimeSource {
             }
         }
         throw new NoSuchFieldError();
+    }
+
+    public boolean setModificationTimeDisabled() {
+        return true;
     }
 }
