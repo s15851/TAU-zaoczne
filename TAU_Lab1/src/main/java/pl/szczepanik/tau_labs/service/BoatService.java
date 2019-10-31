@@ -81,8 +81,10 @@ public class BoatService implements BoatInterface, TimeSource {
                 allTimeStamps.put("creationTime", boatFromDb.getCreationTime());
                 allTimeStamps.put("modificationTime", boatFromDb.getModificationTime());
                 allTimeStamps.put("readTime", boatFromDb.getReadTime());
+
+                return allTimeStamps;
             }
         }
-        return allTimeStamps;
+        throw new NoSuchFieldError();
     }
 }
