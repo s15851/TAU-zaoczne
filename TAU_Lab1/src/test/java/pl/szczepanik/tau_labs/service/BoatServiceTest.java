@@ -224,8 +224,12 @@ public class BoatServiceTest {
         assertEquals(timeStamps, timeStampsOfBoat);
     }
 
-
-
-
+    @Test(expected = NoSuchFieldError.class)
+    public void checkGetAllTimeStampsForBoatByIdNotExists() {
+        Boat boat1 = new Boat(37, "Antila 27", 2009);
+        BoatService db = new BoatService();
+        db.create(boat1);
+        db.getAllTimeStampsForBoatById(38);
+    }
 
 }
