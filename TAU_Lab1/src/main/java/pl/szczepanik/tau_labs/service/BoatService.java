@@ -13,6 +13,7 @@ public class BoatService implements BoatInterface, TimeSource {
     private long timeSource;
     private boolean creationTimeEnabled = true;
     private boolean modificationTimeEnabled = true;
+    private boolean readTimeEnabled = true;
 
 
     public Boat create(Boat boat) throws IllegalArgumentException {
@@ -97,5 +98,9 @@ public class BoatService implements BoatInterface, TimeSource {
 
     public boolean setModificationTimeEnabled() {
         return this.modificationTimeEnabled = true;
+    }
+
+    public boolean setReadTimeDisabled() {
+        return true;
     }
 }

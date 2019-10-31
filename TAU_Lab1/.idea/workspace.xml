@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="11a8fdad-1741-453c-822b-031c3686ae22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/szczepanik/tau_labs/service/BoatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/szczepanik/tau_labs/service/BoatService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/szczepanik/tau_labs/service/BoatServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/szczepanik/tau_labs/service/BoatServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/service/BoatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/szczepanik/tau_labs/service/BoatService.class" afterDir="false" />
@@ -74,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoatServiceTest.checkModificationTimeEnabledAndDisabled">
+  <component name="RunManager" selected="JUnit.BoatServiceTest.checkReadTimeDisabled">
     <configuration name="All in BoatApp (1)" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="BoatApp" />
       <option name="PACKAGE_NAME" value="" />
@@ -147,6 +146,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BoatServiceTest.checkReadTimeDisabled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoatApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.szczepanik.tau_labs.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
+      <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatServiceTest" />
+      <option name="METHOD_NAME" value="checkReadTimeDisabled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BoatServiceTest.checkSetModificationTimeDisabled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BoatApp" />
       <extension name="coverage">
@@ -163,29 +178,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoatServiceTest.checkTimeStampAfterUpdateBoat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoatApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.szczepanik.tau_labs.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
-      <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatServiceTest" />
-      <option name="METHOD_NAME" value="checkTimeStampAfterUpdateBoat" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoatServiceTest.checkReadTimeDisabled" />
         <item itemvalue="JUnit.BoatServiceTest.checkModificationTimeEnabledAndDisabled" />
         <item itemvalue="JUnit.BoatServiceTest.checkSetModificationTimeDisabled" />
         <item itemvalue="JUnit.BoatServiceTest.checkGetAllTimeStampsForBoatByIdNotExists" />
         <item itemvalue="JUnit.BoatServiceTest.checkGetAllTimeStampsForBoatById" />
-        <item itemvalue="JUnit.BoatServiceTest.checkTimeStampAfterUpdateBoat" />
       </list>
     </recent_temporary>
   </component>

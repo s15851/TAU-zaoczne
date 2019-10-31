@@ -267,4 +267,17 @@ public class BoatServiceTest {
         assertEquals(time, db.read(41).getModificationTime());
     }
 
+    @Test
+    public void checkReadTimeDisabled() {
+        long time = 123456;
+        when(timeSource.getCurrentDate()).thenReturn((time);
+        Boat boat = new Boat(42, "Antila 27", 2009);
+        BoatService db = new BoatService();
+        db.create(boat);
+        db.setTimeSource(timeSource.getCurrentDate());
+        db.setReadTimeDisabled();
+        db.read(42);
+        assertEquals(0, db.read(42).getReadTime());
+    }
+
 }
