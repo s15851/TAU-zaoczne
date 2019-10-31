@@ -10,7 +10,9 @@ import org.mockito.junit.MockitoJUnitRunner;
 import pl.szczepanik.tau_labs.domain.Boat;
 import pl.szczepanik.tau_labs.interfaces.TimeSource;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
 
 import static org.junit.Assert.assertEquals;
@@ -202,6 +204,26 @@ public class BoatServiceTest {
         db.update(boat1);
         assertEquals(time, db.read(35).getModificationTime());
     }
+
+    @Test
+    public void checkGetAllTimeStampsForBoatById() {
+        long time = 987654321;
+        when(timeSource.getCurrentDate()).thenReturn(time);
+        Boat boat1 = new Boat(36, "Antila 27", 2009);
+        BoatService db = new BoatService();
+        db.setTimeSource(timeSource.getCurrentDate());
+        db.create(boat1);
+        Boat boat2 = db.read(boat1.getId());
+        boat2.setBoatModel("Phila");
+        db.update(boat2);
+        Map<String, Long> timeStamps = new HashMap<String, Long>();
+        timeStamps.put("creationTime", time);
+        timeStamps.put("modificationTime", time);
+        timeStamps.put("readTime", time);
+        Map<String, Long> timeStampsOfBoat = db.getAllTimeStampsForBoatById(36);
+        assertEquals(timeStamps, timeStampsOfBoat);
+    }
+
 
 
 
