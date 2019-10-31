@@ -32,7 +32,9 @@ public class BoatService implements BoatInterface, TimeSource {
     public Boat read(int id) {
         for (Boat boatFromDb : db) {
             if (boatFromDb.getId() == id) {
-                boatFromDb.setReadTime(getCurrentDate());
+                if (readTimeEnabled) {
+                    boatFromDb.setReadTime(getCurrentDate());
+                }
                 return boatFromDb;
             }
         }
@@ -101,6 +103,6 @@ public class BoatService implements BoatInterface, TimeSource {
     }
 
     public boolean setReadTimeDisabled() {
-        return true;
+        return this.readTimeEnabled = false;
     }
 }

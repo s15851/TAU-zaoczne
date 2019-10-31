@@ -270,7 +270,7 @@ public class BoatServiceTest {
     @Test
     public void checkReadTimeDisabled() {
         long time = 123456;
-        when(timeSource.getCurrentDate()).thenReturn((time);
+        when(timeSource.getCurrentDate()).thenReturn(time);
         Boat boat = new Boat(42, "Antila 27", 2009);
         BoatService db = new BoatService();
         db.create(boat);
