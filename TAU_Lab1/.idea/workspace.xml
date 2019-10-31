@@ -73,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoatServiceTest.checkSetModificationTimeDisabled">
+  <component name="RunManager" selected="JUnit.BoatServiceTest.checkModificationTimeEnabledAndDisabled">
     <configuration name="All in BoatApp (1)" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="BoatApp" />
       <option name="PACKAGE_NAME" value="" />
@@ -130,7 +130,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoatServiceTest.checkIsBoatUpdated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoatServiceTest.checkModificationTimeEnabledAndDisabled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BoatApp" />
       <extension name="coverage">
         <pattern>
@@ -140,7 +140,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.szczepanik.tau_labs.service" />
       <option name="MAIN_CLASS_NAME" value="pl.szczepanik.tau_labs.service.BoatServiceTest" />
-      <option name="METHOD_NAME" value="checkIsBoatUpdated" />
+      <option name="METHOD_NAME" value="checkModificationTimeEnabledAndDisabled" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoatServiceTest.checkModificationTimeEnabledAndDisabled" />
         <item itemvalue="JUnit.BoatServiceTest.checkSetModificationTimeDisabled" />
         <item itemvalue="JUnit.BoatServiceTest.checkGetAllTimeStampsForBoatByIdNotExists" />
         <item itemvalue="JUnit.BoatServiceTest.checkGetAllTimeStampsForBoatById" />
         <item itemvalue="JUnit.BoatServiceTest.checkTimeStampAfterUpdateBoat" />
-        <item itemvalue="JUnit.BoatServiceTest.checkIsBoatUpdated" />
       </list>
     </recent_temporary>
   </component>

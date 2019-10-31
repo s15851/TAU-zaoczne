@@ -175,7 +175,7 @@ public class BoatServiceTest {
     }
 
     @Test
-    public void checkCreationTimeEnabled() {
+    public void checkCreationTimeDisabledAndEnabled() {
         long time = 1234567891;
         when(timeSource.getCurrentDate()).thenReturn(time);
         Boat boat1 = new Boat(33, "Antila 27", 2009);
@@ -246,7 +246,25 @@ public class BoatServiceTest {
         boat1.setYearOfProduction(2016);
         db.update(boat1);
         assertEquals(0, db.read(40).getModificationTime());
+    }
 
+    @Test
+    public void checkModificationTimeDisabledAndEnabled() {
+        long time = 1234567892;
+        when(timeSource.getCurrentDate()).thenReturn(time);
+        Boat boat = new Boat(41, "Antila 27", 2009);
+        BoatService db = new BoatService();
+        db.create(boat);
+        db.setTimeSource(timeSource.getCurrentDate());
+        db.setModificationTimeDisabled();
+        Boat boat1 = db.read(boat.getId());
+        boat1.setBoatModel("Phila");
+        boat1.setYearOfProduction(2016);
+        db.update(boat1);
+        assertEquals(0, db.read(41).getModificationTime());
+        db.setModificationTimeEnabled();
+        db.update(boat1);
+        assertEquals(time, db.read(41).getModificationTime());
     }
 
 }

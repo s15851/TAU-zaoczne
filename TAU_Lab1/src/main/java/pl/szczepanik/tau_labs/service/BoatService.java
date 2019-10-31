@@ -94,4 +94,8 @@ public class BoatService implements BoatInterface, TimeSource {
     public boolean setModificationTimeDisabled() {
         return this.modificationTimeEnabled = false;
     }
+
+    public boolean setModificationTimeEnabled() {
+        return true;
+    }
 }
