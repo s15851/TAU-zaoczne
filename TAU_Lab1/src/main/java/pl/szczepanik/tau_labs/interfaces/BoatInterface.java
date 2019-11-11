@@ -11,6 +11,7 @@ public interface BoatInterface {
     List<Boat> readAll();
     Boat update(Boat boat);
     void delete(int id);
+    int delete(Boat boat);
 
     long getCurrentDate();
 }

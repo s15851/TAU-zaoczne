@@ -109,4 +109,12 @@ public class BoatService implements BoatInterface, TimeSource {
     public boolean setReadTimeEnabled() {
         return this.readTimeEnabled = true;
     }
+
+    @Override
+    public int delete(Boat boat) {
+        int id = boat.getId();
+        db.remove(boat);
+        return id;
+    }
+
 }
