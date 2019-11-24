@@ -1,0 +1,11 @@
+*.class
+*.idea
+*.iml
+*.o
+**/target
+.mtj.tmp/
+**/node_modules/
+*.jar
+*.war
+*.ear
+
