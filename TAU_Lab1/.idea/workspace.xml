@@ -15,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pl.szczepanik.tau_labs.service.BoatServiceTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/service/BoatServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pl/szczepanik/tau_labs/service/BoatServiceTest.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,14 +50,21 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570358577534" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/pl/szczepanik/tau_labs/resources/features" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -74,18 +80,6 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.szczepanik.tau_labs.service" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="JUnit.RunCucumberTest">
     <configuration name="All in BoatApp (1)" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
@@ -201,6 +195,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -226,6 +232,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="277" y="59" key="SettingsEditor" timestamp="1576402673993">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1576402673993" />
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1576402223229">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1576402223229" />
+    <state x="209" y="112" key="new project wizard" timestamp="1576402785225">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="209" y="112" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1576402785225" />
   </component>
   <component name="masterDetails">
     <states>
